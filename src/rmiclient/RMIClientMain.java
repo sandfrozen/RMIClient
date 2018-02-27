@@ -22,7 +22,7 @@ public class RMIClientMain {
 
         try {
 
-            MyServerInt myRemoteObject = (MyServerInt) Naming.lookup("//localhost/ABC");
+            MyServerInt myRemoteObject = (MyServerInt) Naming.lookup("//82.139.136.217/ABC");
             String text = "Start :-)";
             String result = myRemoteObject.getDescription(text);
             System.out.println("Wysłano do servera: " + text);
